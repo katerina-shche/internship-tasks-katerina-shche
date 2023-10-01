@@ -1,0 +1,19 @@
+extends ../../build_modules/common
+
+
+block body
+    +example-button({text: 'example text'})
+    +example-button({text: 'disabled'})(disabled='')
+    //Your code here
+    +button({text: 'Кнопка'})(class="button-outlined")
+    +button({text: 'Кнопка'})(class="button-outlined" disabled='')
+    |
+    +button({text: 'Кнопка'})(class="button-filled")
+    +button({text: 'Кнопка'})(class="button-filled" disabled='')
+    |
+    +slider-button('left')
+    +slider-button('right')(disabled='')
+    |
+    +link('Sustainalytics.com', '/#')
+    +link('Sustainalytics.com', '/')(class='disabled')
+
